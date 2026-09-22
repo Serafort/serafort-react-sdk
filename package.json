@@ -1,0 +1,24 @@
+{
+  "name": "serafort-react-sdk-workspace",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.32.1",
+  "description": "Standalone pnpm workspace for the Serafort React SDK: @serafort/react-sdk (headless) and @serafort/react-elements (styled drop-in components). Split out of the boilerplate/ app monorepo so it can be developed, versioned, and published independently of the internal frontend's tier boundaries.",
+  "scripts": {
+    "build": "pnpm --filter @serafort/react-sdk run build && pnpm --filter @serafort/react-elements run build",
+    "type-check": "pnpm -r run type-check",
+    "test": "pnpm -r run test",
+    "lint": "pnpm -r run lint",
+    "prepare": "husky"
+  },
+  "comment:typescript": "typescript-eslint doesn't support the TS 7.0 native compiler yet (github.com/typescript-eslint/typescript-eslint#10940), so this root-only 'typescript' devDependency pins a TS 6.x instance purely for eslint's parser peer resolution. It does not affect react-sdk/react-elements's own build/type-check, which each resolve tsc from their own local 'typescript7' (real TS 7.0.2) devDependency first.",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.12.0",
+    "husky": "^9.1.7",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.1"
+  }
+}
