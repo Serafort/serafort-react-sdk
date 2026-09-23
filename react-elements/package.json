@@ -41,11 +41,12 @@
     "test:coverage": "vitest --coverage"
   },
   "dependencies": {
-    "@serafort/react-sdk": "workspace:*",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.6",
-    "@mui/material": "^7.3.6"
+    "@mui/material": "^7.3.6",
+    "@serafort/core": "^0.1.0",
+    "@serafort/react-sdk": "workspace:*"
   },
   "peerDependencies": {
     "react": ">=19",

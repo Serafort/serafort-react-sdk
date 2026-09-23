@@ -44,6 +44,9 @@ importers:
       '@mui/material':
         specifier: ^7.3.6
         version: 7.3.11(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.0))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.3.0)(react@19.3.0))(@types/react@19.3.0)(react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      '@serafort/core':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@serafort/react-sdk':
         specifier: workspace:*
         version: link:../react-sdk
@@ -78,6 +81,9 @@ importers:
 
   react-sdk:
     dependencies:
+      '@serafort/core':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@simplewebauthn/browser':
         specifier: ^13.2.2
         version: 13.3.0
@@ -516,6 +522,9 @@ packages:
 
   '@rolldown/pluginutils@1.0.1':
     resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
+
+  '@serafort/core@0.1.0':
+    resolution: {integrity: sha512-TX3JB68dnuc+8DKR77oHG8qfTXoTCq94Y9rOh1GxJek8kGtpjk24L4KjZWOzRVV1NfO40Rl2OMzI7jjRAEDC6Q==}
 
   '@simplewebauthn/browser@13.3.0':
     resolution: {integrity: sha512-BE/UWv6FOToAdVk0EokzkqQQDOWtNydYlY6+OrmiZ5SCNmb41VehttboTetUM3T/fr6EAFYVXjz4My2wg230rQ==}
@@ -1933,6 +1942,8 @@ snapshots:
     optional: true
 
   '@rolldown/pluginutils@1.0.1': {}
+
+  '@serafort/core@0.1.0': {}
 
   '@simplewebauthn/browser@13.3.0': {}
 
