@@ -41,6 +41,7 @@
     "test:coverage": "vitest --coverage"
   },
   "dependencies": {
+    "@serafort/core": "^0.1.0",
     "@simplewebauthn/browser": "^13.2.2"
   },
   "peerDependencies": {
